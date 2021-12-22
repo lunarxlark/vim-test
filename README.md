@@ -32,7 +32,7 @@ runners are supported:
 |     **Groovy** | Maven, Gradle                                                                                                      | `maventest`, `gradletest`                                                                                                                    |
 |    **Haskell** | stack                                                                                                              | `stacktest`                                                                                                                                  |
 |       **Java** | Maven, Gradle (Groovy and Kotlin DSL)                                                                              | `maventest`, `gradletest`                                                                                                                    |
-| **JavaScript** | Ava, Cucumber.js, Cypress, Deno, Intern, Jasmine, Jest, Karma, Lab, Mocha, ng test, ReactScripts, TAP, WebdriverIO | `ava`, `cucumberjs`, `cypress`, `deno`, `intern`, `jasmine`, `jest`, `karma`, `lab`, `mocha`, `ngtest` ,`reactscripts`, `tap`, `webdriverio`, `vue-test-utils`|
+| **JavaScript** | Ava, Cucumber.js, Cypress, Deno, Intern, Jasmine, Jest, Karma, Lab, Mocha, ng test, NX, ReactScripts, TAP, WebdriverIO | `ava`, `cucumberjs`, `cypress`, `deno`, `intern`, `jasmine`, `jest`, `karma`, `lab`, `mocha`, `ngtest` , `nx`, `reactscripts`, `tap`, `webdriverio`, `vue-test-utils`|
 |     **Kotlin** | Gradle (Groovy and Kotlin DSL)                                                                                     | `gradletest`                                                                                                                                 |
 |        **Lua** | Busted                                                                                                             | `busted`                                                                                                                                     |
 |       **Mint** | Mint                                                                                                               | `minttest`                                                                                                                                   |
@@ -430,7 +430,7 @@ let test#python#runner = 'pytest'
 
 The pytest runner optionally supports [pipenv](https://github.com/pypa/pipenv).
 If you have a `Pipfile`, it will use `pipenv run pytest` instead of just
-`pytest`. It also supports [poetry](https://github.com/sdispater/poetry)
+`python -m pytest`. It also supports [poetry](https://github.com/sdispater/poetry)
 and will use `poetry run pytest` if it detects a `poetry.lock`. The pyunit
 runner supports [pipenv](https://github.com/pypa/pipenv) as well and will
 use `pipenv run python -m unittest` if there is a `Pipfile`.
